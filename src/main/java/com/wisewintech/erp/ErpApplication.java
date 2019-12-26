@@ -9,7 +9,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableEurekaClient
 @MapperScan(basePackages = {"com.wisewintech.erp.dao"})
-// 开启事务支持
 @EnableTransactionManagement
 public class ErpApplication {
 

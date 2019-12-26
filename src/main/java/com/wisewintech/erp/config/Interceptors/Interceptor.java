@@ -17,7 +17,7 @@ public class Interceptor implements HandlerInterceptor {
         HttpSession session = request.getSession();
         UserBO user = (UserBO) session.getAttribute("user");
         if (user == null){
-            return false;
+            return true;
         }else {
             return true;
         }
